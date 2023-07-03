@@ -10,6 +10,7 @@ class Episode(object):
 
     offer = self.seller.make_offer()
     decision = self.buyer.check_offer(offer)
+    #self.seller.update(offer, decision)
     new_state = {"last-offer":offer, "offers-made":self.seller.state["offers-made"]+1}
     self.seller.state = new_state
 
