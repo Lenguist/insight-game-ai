@@ -40,3 +40,7 @@ QUESTION: shouldn't the number of cars be constant? aka there is incentive to ke
 
 code is structured in the following way. First, we initialize a Simulation with a certain value, range_min, range_max, imp_incr and imp_init.
 after that, we initialize an Interaction which constitutes to a single negotiation. That will include a Buyer max_price which will be generated according to simulaiton rules.
+
+Markov assumption states that the past doesn't affect the present - all information relevant to decision making is contained in the "state"
+To this end we will modify our original agents to have access to state rather than history
+State will encapsulate the current impatience, and the current

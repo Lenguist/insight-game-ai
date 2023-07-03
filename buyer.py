@@ -1,5 +1,4 @@
 import random
-"Buyer class for markov simulation"
 
 class Buyer(object):
     def __init__(self, maxprice, imp_init, imp_incr):

@@ -1,5 +1,3 @@
-"Encapsulates one negotiation"
-
 class Episode(object):
   def __init__(self, buyer, seller, verbose=True):
     self.buyer = buyer
@@ -12,7 +10,7 @@ class Episode(object):
 
     offer = self.seller.make_offer()
     decision = self.buyer.check_offer(offer)
-    new_state = {"last-offer":offer, "imp":self.buyer.imp}
+    new_state = {"last-offer":offer, "offers-made":self.seller.state["offers-made"]+1}
     self.seller.state = new_state
 
     if self.verbose:
