@@ -11,6 +11,7 @@ class Episode(object):
     offer = self.seller.make_offer()
     decision = self.buyer.check_offer(offer)
     new_state = {"last-offer":offer, "offers-made":self.seller.state["offers-made"]+1}
+    self.seller.update_table(offer, decision, new_state)
     self.seller.state = new_state
 
     if self.verbose:

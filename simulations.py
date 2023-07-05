@@ -10,7 +10,7 @@ def basic_simulation(value, range_min, range_max, imp_incr, imp_init, rounds, se
   for i in range(rounds):
     maxprice = int(random.uniform(range_min, range_max+1))
     buyer = Buyer(maxprice, imp_init, imp_incr)
-    episode = Episode(buyer, seller, verbose=verbose)
+    episode = Episode(buyer, seller, verbose=False)
     profit = episode.run_episode()
     total_profit += profit
   average_return = total_profit/rounds
