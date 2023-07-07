@@ -61,3 +61,4 @@ class EducatedBuyer(object):
 
         self.imp += self.imp_incr
         return decisions
+
