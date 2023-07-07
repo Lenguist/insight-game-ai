@@ -47,6 +47,10 @@ class DescentArithmeticSeller(Seller):
   def make_offer(self):
     offer = self.state["last-offer"]-max(self.descent,1)
     self.descent = self.descent-1
+    if offer>self.value+1:
+      return offer
+    else:
+      return self.value+1
     return offer
   def reset_state(self):
     super().reset_state()
