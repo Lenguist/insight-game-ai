@@ -80,13 +80,12 @@ class QLearningSeller(Seller):
     else: #exploring
       offer = random.randint(self.value+1,self.state['last-offer']-1)
     return offer
-  
+
   def update_table(self, offer, decision, new_state):
     if decision == 'accept offer':
       reward = offer - self.value
     else:
-      reward = 0
-    
+      reward = 0    
     state_array_number = self.get_state_array_number(self.state)
     new_state_array_number = self.get_state_array_number(new_state)
     self.q_table[state_array_number, offer-(self.value+1)] = self.q_table[state_array_number, offer-(self.value+1)] * (1 - self.learning_rate) + \
