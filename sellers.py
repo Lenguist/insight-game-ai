@@ -70,12 +70,12 @@ class QLearningSeller(Seller):
   def make_offer(self):
     offer = np.argmax(self.q_table[self.state, :])
     return offer
-  
+
   def update_table(self, offer, decision, new_state):
     if decision == 'accept offer':
       reward = offer - self.value
     else:
       reward = 0
-    
+
     self.q_table[self.state, offer] = self.q_table[self.state, offer] * (1 - self.learning_rate) + \
                                   self.learning_rate * (reward + self.discount_rate * np.max(self.q_table[new_state, :]))
