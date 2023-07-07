@@ -11,7 +11,7 @@ class Seller(object):
     raise NotImplementedError("Subclasses should implement this method.")
   def reset_state(self):
     self.state = {"last-offer":self.init_offer, "offers-made":0}
-  def update_table(self):
+  def update_table(self, offer, decision, new_state):
     pass
 
 
