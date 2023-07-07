@@ -1,5 +1,5 @@
 import random
-from buyer import Buyer
+from buyers import Buyer
 from episode import Episode
 import numpy as np
 
