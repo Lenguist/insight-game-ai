@@ -49,3 +49,13 @@ class DescentArithmeticSeller(Seller):
   def reset_state(self):
     super().reset_state()
     self.descent = self.init_descent
+
+class TitForTatSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, last_opponent_offer):
+    if last_opponent_offer == None:
+      offer = init_offer
+    else:
+      offer = last_opponent_offer
+    return offer
