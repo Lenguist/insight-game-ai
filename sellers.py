@@ -55,7 +55,7 @@ class TitForTatSeller(Seller):
     super().__init__(value, init_offer)
   def make_offer(self, last_opponent_offer):
     if last_opponent_offer == None:
-      offer = init_offer
+      offer = self.init_offer
     else:
       offer = last_opponent_offer
     return offer
