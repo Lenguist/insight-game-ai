@@ -6,11 +6,11 @@ class Seller(object):
   def __init__(self, value, init_offer):
     self.value = value
     self.init_offer = init_offer
-    self.state = {"last-offer": self.init_offer, "offers-made":0} # initial state
+    self.state = {"last-offer": self.init_offer, "offers-made":0, "comp-last-offer":self.init_offer} # initial state
   def make_offer(self):
     raise NotImplementedError("Subclasses should implement this method.")
   def reset_state(self):
-    self.state = {"last-offer":self.init_offer, "offers-made":0}
+    self.state = {"last-offer":self.init_offer, "offers-made":0, "comp-last-offer":self.init_offer}
   def update_table(self, offer, decision, new_state):
     pass
 
