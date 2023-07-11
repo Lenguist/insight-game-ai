@@ -59,3 +59,41 @@ class TitForTatSeller(Seller):
     else:
       offer = last_opponent_offer
     return offer
+  
+class FixedJumpTitForTatSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, opponent_first_jump):
+    if opponent_first_jump == None:
+      offer = self.init_offer
+    else:
+      p = self.state["last-offer"]-opponent_first_jump
+      if p >= self.value:
+        offer = p
+      else:
+        offer = self.value
+    return offer
+
+class CompetitiveSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, last_opponent_offer, last_opponent_decrease):
+    if last_opponent_offer == None:
+      offer = self.init_offer
+    else:
+      offer = max(last_opponent_offer - (last_opponent_decrease+1), 10)
+    return offer
+
+class ReactiveSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, last_opponent_offer, last_opponent_decrease):
+    if last_opponent_offer == None:
+      offer = self.init_offer
+    else:
+      if last_opponent_decrease < 5:
+        offer = max(last_opponent_offer - (last_opponent_decrease+1), 10)
+      else:
+        offer = 10
+    return offer
+  
