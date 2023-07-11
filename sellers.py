@@ -94,6 +94,6 @@ class ReactiveSeller(Seller):
       if last_opponent_decrease < 5:
         offer = max(last_opponent_offer - (last_opponent_decrease+1), 10)
       else:
-        offer = 10
+        offer = self.value
     return offer
   
