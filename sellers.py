@@ -106,3 +106,27 @@ class QLearningSeller(Seller):
   
   def set_exploiting(self):
     self.exploration_rate = 0
+
+
+class CompetitiveSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, last_opponent_offer, last_opponent_decrease):
+    if last_opponent_offer == None:
+      offer = self.init_offer
+    else:
+      offer = max(last_opponent_offer - (last_opponent_decrease+1), 10)
+    return offer
+
+class ReactiveSeller(Seller):
+  def __init__(self, value, init_offer):
+    super().__init__(value, init_offer)
+  def make_offer(self, last_opponent_offer, last_opponent_decrease):
+    if last_opponent_offer == None:
+      offer = self.init_offer
+    else:
+      if last_opponent_decrease < 5:
+        offer = max(last_opponent_offer - (last_opponent_decrease+1), 10)
+      else:
+        offer = self.value
+    return offer
