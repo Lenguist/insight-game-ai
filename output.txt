@@ -1,0 +1,169 @@
+buyer maxprice: 42
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 67, 'comp-last-offer': 54, 'offers-made': 1}
+decision reject but continue
+seller1 state: {'last-offer': 54, 'comp-last-offer': 67, 'offers-made': 1}
+decision reject but continue
+
+seller0 state: {'last-offer': 26, 'comp-last-offer': 40, 'offers-made': 2}
+decision accept offer
+
+26-10*0.5
+seller1 state: {'last-offer': 40, 'comp-last-offer': 26, 'offers-made': 2}
+decision competitor won
+
+{(100, 100, 0): {67: 0.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}}
+{(100, 100, 0): {54: 0.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}}
+
+
+
+Seller 1 policy:[((100, 100, 0), 67)]
+Seller 2 policy:[((100, 100, 0), 54)]
+buyer maxprice: 36
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 28, 'comp-last-offer': 60, 'offers-made': 1}
+decision accept offer
+seller1 state: {'last-offer': 60, 'comp-last-offer': 28, 'offers-made': 1}
+decision competitor won
+
+{(100, 100, 0): {67: 0.0, 28: 9.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 60)]
+buyer maxprice: 22
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 38, 'comp-last-offer': 54, 'offers-made': 1}
+decision reject but continue
+seller1 state: {'last-offer': 54, 'comp-last-offer': 38, 'offers-made': 1}
+decision reject but continue
+
+seller0 state: {'last-offer': 19, 'comp-last-offer': 32, 'offers-made': 2}
+decision accept offer
+seller1 state: {'last-offer': 32, 'comp-last-offer': 19, 'offers-made': 2}
+decision competitor won
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 60)]
+buyer maxprice: 38
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 80, 'comp-last-offer': 40, 'offers-made': 1}
+decision reject but continue
+seller1 state: {'last-offer': 40, 'comp-last-offer': 80, 'offers-made': 1}
+decision reject but continue
+
+seller0 state: {'last-offer': 56, 'comp-last-offer': 32, 'offers-made': 2}
+decision competitor won
+seller1 state: {'last-offer': 32, 'comp-last-offer': 56, 'offers-made': 2}
+decision accept offer
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 0.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 60)]
+buyer maxprice: 43
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 77, 'comp-last-offer': 40, 'offers-made': 1}
+decision competitor won
+seller1 state: {'last-offer': 40, 'comp-last-offer': 77, 'offers-made': 1}
+decision accept offer
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+buyer maxprice: 31
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 40, 'comp-last-offer': 84, 'offers-made': 1}
+decision reject but continue
+seller1 state: {'last-offer': 84, 'comp-last-offer': 40, 'offers-made': 1}
+decision reject but continue
+
+seller0 state: {'last-offer': 30, 'comp-last-offer': 55, 'offers-made': 2}
+decision accept offer
+seller1 state: {'last-offer': 55, 'comp-last-offer': 30, 'offers-made': 2}
+decision competitor won
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5, 40: 0.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}, (40, 84, 1): {30: 10.0}, (30, 55, 2): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0, 84: 0.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}, (84, 40, 1): {55: 5.0}, (55, 30, 2): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+buyer maxprice: 26
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 91, 'comp-last-offer': 20, 'offers-made': 1}
+decision competitor won
+seller1 state: {'last-offer': 20, 'comp-last-offer': 91, 'offers-made': 1}
+decision accept offer
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5, 40: 0.0, 91: 2.5}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}, (40, 84, 1): {30: 10.0}, (30, 55, 2): {}, (91, 20, 1): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0, 84: 0.0, 20: 5.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}, (84, 40, 1): {55: 5.0}, (55, 30, 2): {}, (20, 91, 1): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+buyer maxprice: 42
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 58, 'comp-last-offer': 28, 'offers-made': 1}
+decision competitor won
+seller1 state: {'last-offer': 28, 'comp-last-offer': 58, 'offers-made': 1}
+decision accept offer
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5, 40: 0.0, 91: 2.5, 58: 4.5}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}, (40, 84, 1): {30: 10.0}, (30, 55, 2): {}, (91, 20, 1): {}, (58, 28, 1): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0, 84: 0.0, 20: 5.0, 28: 9.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}, (84, 40, 1): {55: 5.0}, (55, 30, 2): {}, (20, 91, 1): {}, (28, 58, 1): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+buyer maxprice: 40
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 14, 'comp-last-offer': 92, 'offers-made': 1}
+decision accept offer
+seller1 state: {'last-offer': 92, 'comp-last-offer': 14, 'offers-made': 1}
+decision competitor won
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5, 40: 0.0, 91: 2.5, 58: 4.5, 14: 2.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}, (40, 84, 1): {30: 10.0}, (30, 55, 2): {}, (91, 20, 1): {}, (58, 28, 1): {}, (14, 92, 1): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0, 84: 0.0, 20: 5.0, 28: 9.0, 92: 1.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}, (84, 40, 1): {55: 5.0}, (55, 30, 2): {}, (20, 91, 1): {}, (28, 58, 1): {}, (92, 14, 1): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+buyer maxprice: 22
+seller0 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+seller1 state: {'last-offer': 100, 'offers-made': 0, 'comp-last-offer': 100}
+
+seller0 state: {'last-offer': 88, 'comp-last-offer': 45, 'offers-made': 1}
+decision reject but continue
+seller1 state: {'last-offer': 45, 'comp-last-offer': 88, 'offers-made': 1}
+decision reject but continue
+
+seller0 state: {'last-offer': 73, 'comp-last-offer': 43, 'offers-made': 2}
+decision reject but continue
+seller1 state: {'last-offer': 43, 'comp-last-offer': 73, 'offers-made': 2}
+decision reject but continue
+
+seller0 state: {'last-offer': 14, 'comp-last-offer': 28, 'offers-made': 3}
+decision walk away
+seller1 state: {'last-offer': 28, 'comp-last-offer': 14, 'offers-made': 3}
+decision walk away
+
+{(100, 100, 0): {67: 0.0, 28: 9.0, 38: 0.0, 80: 0.0, 77: 7.5, 40: 0.0, 91: 2.5, 58: 4.5, 14: 2.0, 88: 0.0}, (67, 54, 1): {26: 8.0}, (26, 40, 2): {}, (28, 60, 1): {}, (38, 54, 1): {19: 4.5}, (19, 32, 2): {}, (80, 40, 1): {56: 5.5}, (56, 32, 2): {}, (77, 40, 1): {}, (40, 84, 1): {30: 10.0}, (30, 55, 2): {}, (91, 20, 1): {}, (58, 28, 1): {}, (14, 92, 1): {}, (88, 45, 1): {73: 0.0}, (73, 43, 2): {14: 0.0}, (14, 28, 3): {}}
+{(100, 100, 0): {54: 0.0, 60: 4.5, 40: 15.0, 84: 0.0, 20: 5.0, 28: 9.0, 92: 1.0, 45: 0.0}, (54, 67, 1): {40: 4.0}, (40, 26, 2): {}, (60, 28, 1): {}, (54, 38, 1): {32: 2.25}, (32, 19, 2): {}, (40, 80, 1): {32: 11.0}, (32, 56, 2): {}, (40, 77, 1): {}, (84, 40, 1): {55: 5.0}, (55, 30, 2): {}, (20, 91, 1): {}, (28, 58, 1): {}, (92, 14, 1): {}, (45, 88, 1): {43: 0.0}, (43, 73, 2): {28: 0.0}, (28, 14, 3): {}}
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
+Seller 1 average profits: 0.067
+Seller 2 average profits: 0.08
+Seller 1 policy:[((100, 100, 0), 28)]
+Seller 2 policy:[((100, 100, 0), 40)]
