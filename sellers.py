@@ -187,6 +187,8 @@ class OldQLearningSeller(Seller):
   def set_exploiting(self):
     self.exploration_rate = 0
 
+
+
 import random
 from sellers import Seller
 import numpy as np
