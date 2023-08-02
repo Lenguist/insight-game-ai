@@ -2,7 +2,7 @@
 
 
 Buyer: Hello! I wanted to buy this car. How much is it?
-
+```
                               _.-="_-         _
                          _.-="   _-          | ||"""""""---._______     __..
              ___.===""""-.______-,,,,,,,,,,,,`-''----" """""       """""  __'
@@ -12,12 +12,12 @@ Buyer: Hello! I wanted to buy this car. How much is it?
 V___________:|          |: |========================|    :|          |:   _-"
  V__________: \        / :_|=======================/_____: \        / :__-"
  -----------'  "-____-"  `-------------------------------'  "-____-"
-
+```
 *you bought this car for 50 so you shouldn't sell cheaper*
 Buyer: What is your initial offer?
 You: 55
 Buyer: Okay, no, that's way too much. How about this car instead?
-
+```
 
         __-------__
       / _---------_ \
@@ -31,7 +31,7 @@ Buyer: Okay, no, that's way too much. How about this car instead?
 [_________|MEIN1|_________]
  ||||    ~~~~~~~~     ||||
  `--'                 `--'
-
+```
 Deal made at 30
 buyer max price: 36
 missed value: 6
