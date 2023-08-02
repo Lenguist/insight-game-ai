@@ -1,6 +1,8 @@
 import random
 
-#buyer for one seller scenario
+# Buyer for one seller scenario
+# First we check walking away, then accept/reject offer
+# Accepts offer if lower or equal max
 class Buyer(object):
     def __init__(self, maxprice, imp_init, imp_incr):
         self.maxprice = maxprice
@@ -16,7 +18,8 @@ class Buyer(object):
         self.imp += self.imp_incr
         return "reject but continue"
 
-#buyer for two or more sellers
+# Buyer for two or more sellers
+# Checks walk away, then each available offer, then accept/reject
 class EducatedBuyer(object):
     def __init__(self, max_price, imp_incr):
         self.max_price = max_price

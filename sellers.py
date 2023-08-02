@@ -2,6 +2,8 @@
 import random
 import numpy as np
 import math
+
+# Generic Seller Class
 class Seller(object):
   def __init__(self, value, init_offer):
     self.value = value
@@ -14,23 +16,27 @@ class Seller(object):
   def update_table(self, offer, decision, new_state):
     pass
 
-
+# Random seller
+# selects a price at random between minimum and last offer
 class RandomSeller(Seller):
   def make_offer(self):
     offer = int(random.uniform(self.value+1, self.state["last-offer"])) # return random offer
     return offer
 
+# Descent by One Seller
+# each next bid is one less than the previous one
 class DescentByOneSeller(Seller):
   def make_offer(self):
     offer = self.state["last-offer"]-1
     return offer
 
+# For user interaction
 class UserInputSeller(Seller):
  def make_offer(self):
   offer = int(input("You: "))
   return offer
 
-
+# Generaliztion of Descent By One Seller
 class DescentByNSeller(Seller):
   def __init__(self, value, init_offer, descent):
     super().__init__(value, init_offer)
@@ -39,6 +45,9 @@ class DescentByNSeller(Seller):
     offer = self.state["last-offer"]-self.descent
     return offer
 
+# Heuristic seller
+# descents by a decreasing amount each round
+# 20-> 15-> 11 -> 8 -> 6 -> 5 -> 4
 class DescentArithmeticSeller(Seller):
   def __init__(self, value, init_offer, init_descent):
     super().__init__(value, init_offer)

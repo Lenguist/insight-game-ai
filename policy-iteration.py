@@ -1,4 +1,5 @@
-"policy iteration to get optimal offer sequence for non-markov model"
+"policy iteration to get optimal offer sequence for one-seller scenario"
+# CURRENTLY NEEDS FIXES
 
 value = 10
 range_min = 11

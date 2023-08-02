@@ -1,3 +1,6 @@
+#LEGACY
+# code that encapsulates one single-seller episode (negotiation)
+
 class Episode(object):
   def __init__(self, buyer, seller, verbose=True):
     self.buyer = buyer

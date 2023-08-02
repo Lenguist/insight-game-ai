@@ -1,3 +1,5 @@
+# LEGACY
+"Encapsulates different modes of simulations for one seller scenario"
 import random
 from buyers import Buyer
 from episode import Episode
