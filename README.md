@@ -1,5 +1,42 @@
 # insight-game-ai
 
+
+Buyer: Hello! I wanted to buy this car. How much is it?
+
+                              _.-="_-         _
+                         _.-="   _-          | ||"""""""---._______     __..
+             ___.===""""-.______-,,,,,,,,,,,,`-''----" """""       """""  __'
+      __.--""     __        ,'                   o \           __        [__|
+ __-""=======.--""  ""--.=================================.--""  ""--.=======:
+]       [w] : /        \ : |========================|    : /        \ :  [w] :
+V___________:|          |: |========================|    :|          |:   _-"
+ V__________: \        / :_|=======================/_____: \        / :__-"
+ -----------'  "-____-"  `-------------------------------'  "-____-"
+
+*you bought this car for 50 so you shouldn't sell cheaper*
+Buyer: What is your initial offer?
+You: 55
+Buyer: Okay, no, that's way too much. How about this car instead?
+
+
+        __-------__
+      / _---------_ \
+     / /           \ \
+     | |           | |
+     |_|___________|_|
+ /-\|                 |/-\
+| _ |\       0       /| _ |
+|(_)| \      !      / |(_)|
+|___|__\_____!_____/__|___|
+[_________|MEIN1|_________]
+ ||||    ~~~~~~~~     ||||
+ `--'                 `--'
+
+Deal made at 30
+buyer max price: 36
+missed value: 6
+
+
 INSIGHT (Intelligent Negotiation Strategy for Information Games
 with Hidden Tactics) is the culmination of our research in the use of
 reinforcement learning and game theory to create optimal bidding strate-
