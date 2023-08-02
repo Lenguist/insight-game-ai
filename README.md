@@ -30,6 +30,7 @@ involving other RL algorithms that could learn to cooperate.
 
 Developed as part of 2023 summer Columbia Summer Undergraduate Research Experience in Math Modelling (CSUREMM)
 
+- - - - - - - -
 
 Buyer: Hello! I wanted to buy this car. How much is it?
 ```
