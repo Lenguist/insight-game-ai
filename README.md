@@ -65,6 +65,9 @@ Buyer: Okay, no, that's way too much. How about this car instead?
  `--'                 `--'
 ```
 You: 30
+
 Deal made at 30
+
 buyer max price: 36
+
 missed value: 6

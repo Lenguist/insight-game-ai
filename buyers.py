@@ -20,6 +20,7 @@ class Buyer(object):
 
 # Buyer for two or more sellers
 # Checks walk away, then each available offer, then accept/reject
+#buyer for two or more sellers
 class EducatedBuyer(object):
     def __init__(self, max_price, imp_incr):
         self.max_price = max_price
